@@ -231,7 +231,7 @@ const userController = {
         // Exemple d'utilisation de la fonction d'envoi de SMS
       }
       sendSMS('+14344045641', 'This is your code verification : ' + activationCode);
-
+      console.log('message sent');
     }
     const tokenSend = jwt.sign(
       { idUser, phoneNumber, activationCode },
